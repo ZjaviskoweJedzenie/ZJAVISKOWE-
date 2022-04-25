@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu"
+    android:fillViewport="true"
+    android:id="@+id/root">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="20dp">
+            <RelativeLayout
+                android:layout_alignParentStart="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ksztaltpodbutton"
+                android:layout_centerVertical="true"
+                android:layout_margin="20dp">
+
+                <ImageView
+
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_menu"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_alignParentEnd="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/ksztaltpodbutton"
+                android:layout_centerVertical="true"
+                android:layout_margin="20dp">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/help"
+                    android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/ksztaltpodbutton">
+            <ImageView
+                android:id="@+id/ic_filter"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/filter"/>
+            <ImageView
+                android:id="@+id/ic_search"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/magnifiying_glass"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/ic_search"
+                android:layout_toStartOf="@id/ic_filter"
+                android:background="@null"
+                android:hint="@string/search"
+                android:padding="10dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Najpopularniejsze"
+            android:layout_margin="30dp"
+            android:textSize="30dp"
+            android:textColor="@color/black"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/food"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Polecamy"
+            android:layout_margin="30dp"
+            android:textSize="30dp"
+            android:textColor="@color/black"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="@drawable/ksztalt_polecanych"
+    android:layout_margin="10dp">
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/beef"
+        android:layout_alignParentRight="true"
+        android:layout_margin="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Klasa Kiełbasa \n\n 10zł"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+</RelativeLayout>
+<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/ksztalt_polecanych"
+            android:layout_margin="20dp">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/coffee" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Import \njava.util.arabica.Espresso\n8zł"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+</RelativeLayout>
+<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/ksztalt_polecanych"
+            android:layout_margin="20dp">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/frenchfries"
+                android:layout_alignParentRight="true"
+                android:layout_margin="25dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="InterFRIES \n\n10zł"
+        android:layout_margin="30dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>
+<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/ksztalt_polecanych"
+            android:layout_margin="20dp">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/hamburger"
+
+                android:layout_alignParentRight="true"
+                android:layout_margin="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Button Buns with \nCheckdar Errors\n22zł"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+</RelativeLayout>
+<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/ksztalt_polecanych"
+            android:layout_margin="20dp">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ribs"
+                android:layout_alignParentRight="true"
+                android:layout_margin="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Garlic static grilled main \n (string[] Ribs);\n40zł"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+</RelativeLayout>
+<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/ksztalt_polecanych"
+            android:layout_margin="10dp">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/steak"
+                android:layout_alignParentRight="true"
+                android:layout_margin="25dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FullSTEAK Developer \n\n100zł"
+        android:layout_margin="30dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+</RelativeLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <RelativeLayout
+            android:background="@drawable/background"
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+            </com.google.android.gms.ads.AdView>
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_width="274dp"
+                android:layout_height="274dp"
+                android:src="@drawable/pizza_slice"/>
+        </RelativeLayout>
+            <TextView
+                android:layout_width="330dp"
+                android:layout_height="75dp"
+                android:text="Witamy w \n zJAViskowym jedzeniu!"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:layout_margin="10sp"/>
+    <Button
+        android:id="@+id/btn_start"
+        android:background="@drawable/ksztalt_start"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="zamów już teraz"/>
+
+
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
